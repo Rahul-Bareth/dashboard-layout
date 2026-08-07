@@ -15,14 +15,15 @@
 body {
   font-family: "inter", sans-serif;
   background-color: var(--gray); /* Soft green-grey outer background */
-  min-height: 100vh;
-  padding: 20px;
+  
+  padding: 15px;
 }
 
 .dashboard {
   background: var(--lime);
   border-radius: 25px;
   padding: 7px;
+  min-height: 100vh;
 }
 
 
@@ -32,8 +33,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-left: 90px;
-  margin-top: 30px; */
   width: 88%;
 }
 
@@ -254,6 +253,143 @@ h2 {
 }
 
 /* CHARTS-SECTION */
+
+
+.statistics-container {
+  margin-top: 15px;
+  max-width: 780px;
+  height: auto;
+  background: var(--gray);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+.stats-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  
+}
+
+.black-dot {
+  /* display: flex;
+  align-items: center; */
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: var(--dark);
+  margin-top: 3px;
+}
+
+.yellow-dot {
+  /* display: flex;
+  align-items: center; */
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background: #f1f12d;
+  margin-top: 3px;
+}
+
+
+.stats-left {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.stats-right {
+  margin-top: 20px;
+  background: var(--dark);
+  color: var(--white);
+  padding: 8px 15px;
+  border-radius: 20px;
+} 
+
+
+.chart-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bar {
+ margin-top: 20px;
+ display: flex; 
+ gap: 50px;
+ max-width: 780px;
+ padding: 10px;
+ overflow: hidden;
+}
+
+.top {
+  display: flex;
+  gap: 30px;
+  width: 40px;
+  height: 120px;
+  background: var(--dark);
+  border-radius: 30px;
+}
+
+#top4 {
+  border: 2px dotted var(--dark);
+  background: var(--lime);
+}
+
+
+/* RIGHT-MAIN-CONTENT */
+
+.right-panel {
+  height: 100%;
+  width: 100%;
+  background: var(--lime);
+  z-index: 200;
+  right: -100px;
+}
+
+/* .boxes {
+  display: flex;
+} */
+ 
+.boxes2 {
+  position: absolute;
+  top: 120px;
+  left: 900px;
+  width: 340px;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  z-index: 230;
+}
+
+
+.box1 {
+  /* position: relative; */
+  height: 100px;
+  width: 165px;
+  background: var(--gray);
+  border-radius: 25px;
+}
+
+.box2 {
+  /* position: relative; */
+  background:  var(--gray);
+  height: 100px;
+  width: 165px;
+  border-radius: 25px;
+}
+
+
+
+
+
 
 
 
