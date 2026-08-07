@@ -8,7 +8,7 @@
   --dark: #12141d;
   --white: #ffffff;
   --gray:  #f2f3f2;
-  --lime:#dae68e;
+  --lime:#c7cbac;
   --text:#2b2b2b;
 }
 
@@ -21,15 +21,65 @@ body {
 
 
 .dashboard {
-  /* background:var(--lime); */
+  background:var(--lime);
   border-radius:25px;
   padding: 7px;
+}
+
+
+/* header */
+
+header {
+  position: sticky;
+  min-height: auto; 
+  top: 0;
+  z-index: 1000;
+  /* top: 50px;
+  left: 120px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 90px;
+  margin-top: 30px; */
+  width: 90%;
+}
+
+h1 {
+  max-width: 350px;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#setting-icon {
+  font-size: 18px;
+  background: var(--gray);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.create-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--dark);
+  color: var(--white);
+  padding: 12px 14px;
+  border: none;
+  border-radius: 14px;
 }
 
 
 /* SIDEBAR */
 
 .sidebar {
+  top: 0px;
+  position: sticky;
+  z-index: 100;
   min-height: 100vh;
   background: var(--dark);
   color: var(--white);
@@ -65,5 +115,7 @@ i {
 }
 
 
-/* Header */
+/* main */
+
+
 
