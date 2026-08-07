@@ -142,6 +142,8 @@ i {
 
 .grid-card-row {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 790px;
 }
 
 
@@ -163,14 +165,14 @@ i {
   /* margin-left: 6px; */
   border: none;
   font-size: 20px;
+  background: none;
 }
 
 .operations-btn i {
   margin-right: 10px;
   font-size: 18px;
-  background: var(--lime);
   padding: 13px;
-  border-radius: 50%;
+  
 }
 
 .dots {
@@ -214,4 +216,48 @@ sub {
   background: transparent;
   border: 2px dotted var(--dark);
 }
+
+
+/* GRID 2 */
+
+
+.grid-card:nth-child(2) {
+  background:  #efef83;
+}
+
+/* GRID 3 */
+
+.ai-card {
+  background-image: url(images/humanrobot.png);
+  height: 250px;
+  width: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+h2 {
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--white);
+}
+
+.upgrade {
+  padding: 12px 24px;
+  margin-left: 15px;
+  margin-top: 28px; 
+  width: 85%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* CHARTS-SECTION */
+
+
+
+
+
+
 
