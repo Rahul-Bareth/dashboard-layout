@@ -24,17 +24,6 @@
   <body>
     <div class="dashboard">
 
-       <header>
-      <h1>Managing Your Team
-         and Workflows</h1>
-       <div class="header-right">
-        <i id="setting-icon" class="fa-solid fa-gear"></i>
-        <button class="create-btn">
-          <i class="fa-solid fa-plus"></i>
-          Create a New Scenario</button>
-       </div>
-     </header>
-
       <aside class="sidebar">
         <div class="top-sidebar">
           <i class="fa-solid fa-house"></i>
@@ -50,18 +39,72 @@
           <i class="fa-solid fa-rocket"></i>
           <i class="fa-regular fa-circle-question"></i>
           <div class="userprofile">
-            <img class="profile-picture" src="images/developer.jpg" alt="user-picture">
+            <img
+              class="profile-picture"
+              src="images/developer.jpg"
+              alt="user-picture"
+            />
           </div>
         </div>
       </aside>
 
-      <main>
-        <div class="nav-tabs">
-          <button>Organization</button>
-          <button>Teams</button>
-        </div>
-      </main>
+      <div class="main-container">
+        <header>
+          <h1>Managing Your Team and Workflows</h1>
+          <div class="header-right">
+            <i id="setting-icon" class="fa-solid fa-gear"></i>
+            <button class="create-btn">
+              <i class="fa-solid fa-plus"></i>
+              Create a New Scenario
+            </button>
+          </div>
+        </header>
 
+        <main>
+          <div class="nav-tabs">
+            <button>Organization</button>
+            <button>Teams</button>
+            <button>Users</button>
+            <button>Subscription</button>
+            <button>Payment</button>
+            <button>Installed Apps</button>
+            <button>Variables</button>
+            <button>Scenario Properties</button>
+          </div>
+        
+          <div class="grid-card-row">
+            <div class="grid-card">
+              <div class="title">
+
+                <button class="operations-btn">
+                <i class="fa-solid fa-gear"></i>
+                Operations
+                </button>
+                <div class="dots">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div> 
+                </div>             
+    
+                <div class="operation-result">
+                  <sup>700</sup>
+                  <sub>/1000</sub>
+                </div>
+                
+                <div class="capsules">
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                </div>
+
+            </div>
+          </div>
+    </main>
+
+      </div>
     </div>
   </body>
 </html>
