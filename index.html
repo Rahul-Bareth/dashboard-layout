@@ -1,159 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Layout</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="dashboard">
-      <aside class="sidebar">
-        <div class="top-sidebar">
-          <i class="fa-solid fa-house"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-          <i class="fa-solid fa-puzzle-piece"></i>
-          <i class="fa-solid fa-link"></i>
-          <i class="fa-solid fa-globe"></i>
-          <i class="fa-solid fa-ellipsis"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="top-sidebar">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+        <i class="fa-solid fa-puzzle-piece"></i>
+        <i class="fa-solid fa-link"></i>
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+
+      <div class="bottom-sidebar">
+        <i class="fa-solid fa-book-open"></i>
+        <i class="fa-solid fa-rocket"></i>
+        <i class="fa-regular fa-circle-question"></i>
+        <div class="userprofile">
+          <img class="profile-picture" src="images/developer.jpg" alt="user-picture" />
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-container">
+      <header>
+        <h1>Managing Your Team and Workflows</h1>
+        <div class="header-right">
+          <i id="setting-icon" class="fa-solid fa-gear"></i>
+          <button class="create-btn">
+            <i class="fa-solid fa-plus"></i>
+            Create a New Scenario
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="nav-tabs">
+          <button class="active">Organization</button>
+          <button>Teams</button>
+          <button>Users</button>
+          <button>Subscription</button>
+          <button>Payment</button>
+          <button>Installed Apps</button>
+          <button>Variables</button>
+          <button>Scenario Properties</button>
+          <button>Dashboard</button>
+          <button>Analytics</button>
+          <button>Reports</button>
+          <button>Projects</button>
         </div>
 
-        <div class="bottom-sidebar">
-          <i class="fa-solid fa-book-open"></i>
-          <i class="fa-solid fa-rocket"></i>
-          <i class="fa-regular fa-circle-question"></i>
-          <div class="userprofile">
-            <img
-              class="profile-picture"
-              src="images/developer.jpg"
-              alt="user-picture"
-            />
-          </div>
-        </div>
-      </aside>
+        <div class="content-wrapper">
+          <div class="left-panel">
+            <div class="grid-card-row">
+              <div class="grid-card">
+                <div class="title">
+                  <button class="operations-btn">
+                    <i class="fa-solid fa-gear"></i>
+                    Operations
+                  </button>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
 
-      <div class="main-container">
-        <header>
-          <h1>Managing Your Team and Workflows</h1>
-          <div class="header-right">
-            <i id="setting-icon" class="fa-solid fa-gear"></i>
-            <button class="create-btn">
-              <i class="fa-solid fa-plus"></i>
-              Create a New Scenario
-            </button>
-          </div>
-        </header>
+                <div class="operation-result">
+                  <sup>700</sup>
+                  <sub>/1000</sub>
+                </div>
 
-        <main>
-          <div class="nav-tabs">
-            <button class="active">Organization</button>
-            <button>Teams</button>
-            <button>Users</button>
-            <button>Subscription</button>
-            <button>Payment</button>
-            <button>Installed Apps</button>
-            <button>Variables</button>
-            <button>Scenario Properties</button>
-            <button>Dashboard</button>
-            <button>Analytics</button>
-            <button>Reports</button>
-            <button>Projects</button>
-          </div>
-
-          <div class="content-wrapper">
-            <div class="left-panel">
-          <div class="grid-card-row">
-            <div class="grid-card">
-              <div class="title">
-                <button class="operations-btn">
-                  <i class="fa-solid fa-gear"></i>
-                  Operations
-                </button>
-                <div class="dots">
-                  <i class="fa-solid fa-ellipsis"></i>
+                <div class="capsules">
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
                 </div>
               </div>
 
-              <div class="operation-result">
-                <sup>700</sup>
-                <sub>/1000</sub>
-              </div>
+              <div class="grid-card">
+                <div class="title">
+                  <button class="operations-btn">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    Data Transfer
+                  </button>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                </div>
 
-              <div class="capsules">
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-              </div>
-            </div>
+                <div class="operation-result">
+                  <sup>163</sup>
+                  <sub>/512.0 MB</sub>
+                </div>
 
-            <div class="grid-card">
-              <div class="title">
-                <button class="operations-btn">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                  Data Transfer
-                </button>
-                <div class="dots">
-                  <i class="fa-solid fa-ellipsis"></i>
+                <div class="capsules">
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
+                  <div class="capsule"></div>
                 </div>
               </div>
 
-              <div class="operation-result">
-                <sup>163</sup>
-                <sub>/512.0 MB</sub>
+
+              <div id="ai-card" class="grid-card">
+                <video autoplay muted loop playsinline>
+                  <source src="robot.mp4" type="video/mp4">
+                </video>
               </div>
 
-              <div class="capsules">
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-                <div class="capsule"></div>
-              </div>
+
             </div>
 
+            <div class="statistics-container">
+              <div stats>
+                <div class="stats-title">
+                  <div class="stats-left">
+                    <i class="fa-solid fa-signal"></i>
+                    <h3>Statistics</h3>
+                    <div class="black-dot"></div>
+                    <p>Operations</p>
+                    <div class="yellow-dot"></div>
+                    <p>Data Transfer</p>
+                  </div>
 
-            <div id="ai-card" class="grid-card">
-  <video autoplay muted loop playsinline>
-    <source src="robot.mp4" type="video/mp4">
-  </video>
-</div>
-      
-
-          </div>
-
-           <div class="statistics-container"> 
-            <div stats>
-              <div class="stats-title">
-                   <div class="stats-left">
-                     <i class="fa-solid fa-signal"></i>
-                  <h3>Statistics</h3>
-                  <div class="black-dot"></div>
-                  <p>Operations</p>
-                  <div class="yellow-dot"></div>
-                  <p>Data Transfer</p>
-                   </div>
-               
                   <div class="stats-right">
                     <select>
                       <option>2026</option>
@@ -164,11 +153,11 @@
                       <option>2021</option>
                       <option>2020</option>
                     </select>
-                  <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                  </div>
                 </div>
-               </div>
-                </div>
-                
+              </div>
+
               <div class="chart-item">
                 <div class="bar">
                   <div class="top"></div>
@@ -182,18 +171,18 @@
                   <div id="top7" class="top"></div>
                   <div class="bottom"></div>
                 </div>
-                
-              </div>
 
               </div>
-           
+
             </div>
-<div class="right-panel">
+
+          </div>
+          <div class="right-panel">
             <div class="boxes">
               <div class="boxes2">
                 <div class="box1">
                   <i class="fa-regular fa-message"></i>
-                   <p>Community</p>
+                  <p>Community</p>
                 </div>
                 <div class="box2">
                   <i class="fa-solid fa-graduation-cap"></i>
@@ -201,56 +190,57 @@
                 </div>
               </div>
               <div class="big-boxes">
-              <div class="box">
-                 <div class="icons">
-                  <i class="fa-solid fa-question"></i>
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                 </div>
-                <p>Help Center</p>
-                <p>Explore our detailed documentation.</p>
-              </div>
-              <div class="box">
-                <div class="icons">
-                  <i class="fa-solid fa-user-group"></i>
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="box">
+                  <div class="icons">
+                    <i class="fa-solid fa-question"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                  <p>Help Center</p>
+                  <p>Explore our detailed documentation.</p>
                 </div>
-                
-                <p>Partner Directory</p>
-                <p>Find trusted partners and experts.</p>
-              </div>
-              <div class="box">
-                <div class="icons">
-                 <i class="fa-regular fa-newspaper"></i>
-                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="box">
+                  <div class="icons">
+                    <i class="fa-solid fa-user-group"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+
+                  <p>Partner Directory</p>
+                  <p>Find trusted partners and experts.</p>
                 </div>
-               
-                <p>Blog</p>
-                <p>Read the latest news and insights.</p>
-              </div>
-              <div class="box">
-                <div class="icons">
-                 <i class="fa-solid fa-chart-simple"></i>
-                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="box">
+                  <div class="icons">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+
+                  <p>Blog</p>
+                  <p>Read the latest news and insights.</p>
                 </div>
-                
-                <p>Use Cases</p>
-                <p>Discover practical workflow examples.</p>
-              </div>
+                <div class="box">
+                  <div class="icons">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+
+                  <p>Use Cases</p>
+                  <p>Discover practical workflow examples.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          </div>
+        </div>
 
-          </div>
-
-
-          
-          </div>
-
-
-        </main>
-      </div>
     </div>
-  </body>
+
+
+
+  </div>
+
+
+  </main>
+  </div>
+  </div>
+</body>
+
 </html>
