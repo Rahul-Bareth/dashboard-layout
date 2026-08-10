@@ -1,3 +1,7 @@
-## Dashboard Layout
+# Admin Dashboard
 
-A modern and responsive dashboard layout built using HTML and CSS. This project focuses on creating a clean user interface with a sidebar navigation, dashboard cards, charts, and organized content sections while practicing Flexbox, Grid, and responsive design techniques.
+A modern dashboard UI built with HTML and CSS, featuring responsive layouts, dashboard cards, charts, navigation components, and a clean user interface across desktop and mobile devices.
+
+## Tech Stack
+
+HTML5 • CSS3 • Font Awesome
