@@ -45,6 +45,7 @@ body {
   background: var(--lime);
   border-radius: 25px;
   padding: 7px;
+  /* height: 100vh; */
   min-height: 100vh;
   margin: 0 auto;
   min-width: 100%;
@@ -513,13 +514,16 @@ select {
 /* RIGHT-MAIN-CONTENT */
 
 .right-panel {
- display: flex;
+  display: flex;
   max-width: 310px;
   width: 310px;
   flex-shrink: 0;
   height: auto;
   background: var(--lime);
-  overflow-y: visible;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
 }
 
 
@@ -652,8 +656,17 @@ select {
 /* TABLET-SCREEN-SIZE */
 
 @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
+
   .dashboard {
     width: 100%;
+  }
+
+  .main-container {
+    height: 100vh;
+    min-height: 0;
+    width: calc(100% - 85px);
+    margin-left: 85px;
   }
 
   .content-wrapper {
@@ -665,28 +678,42 @@ select {
     width: 100%;
   }
 
-  .main-container {
-    width: 100%;
-  }
-
-  .right-panel {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .grid-card-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
   .left-panel {
     width: 100%;
     height: auto;
   }
 
-  .team-grid {
-  grid-template-columns: repeat(2, 1fr);
+  .grid-card-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .right-panel {
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .right-panel::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .right-panel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .right-panel::-webkit-scrollbar-thumb {
+    background: #11131d;
+    border-radius: 10px;
+  }
 }
+
+ 
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
 
 
@@ -733,6 +760,8 @@ select {
 
 
   .main-container {
+    height: 100vh;
+    min-height: 0;
     margin-top: 30px;
     margin-left: 0;
     width: 100%;
@@ -848,5 +877,6 @@ select {
 
   .team-grid {
   grid-template-columns: 1fr;
+}
 }
 }
