@@ -170,7 +170,7 @@ i {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 30px;
 }
 
@@ -513,13 +513,13 @@ select {
 /* RIGHT-MAIN-CONTENT */
 
 .right-panel {
-  display: flex;
+ display: flex;
   max-width: 310px;
   width: 310px;
   flex-shrink: 0;
-  height: 109vh;
+  height: auto;
   background: var(--lime);
-  overflow-y: auto;
+  overflow-y: visible;
 }
 
 
@@ -603,6 +603,50 @@ select {
   padding: 10px;
 }
 
+/* TEAM-PERFORMANCE-SECTION */
+
+.team-performance {
+  margin-top: 20px;
+  background: var(--gray);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-header h2 {
+  color: var(--dark);
+}
+
+.team-grid {
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.team-card {
+  background: var(--dark);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: var(--gray);
+}
+
+.team-card p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.team-card span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 
  
 /* TABLET-SCREEN-SIZE */
@@ -639,6 +683,10 @@ select {
     width: 100%;
     height: auto;
   }
+
+  .team-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 
@@ -675,12 +723,14 @@ select {
 
   .menu {
     display: flex;
-
+    cursor: pointer;
   } 
 
-  .menu:hover {
-   display: flex;
-  } 
+  .mobile-menu {
+    display: block;
+  }
+
+
 
   .main-container {
     margin-top: 30px;
@@ -791,4 +841,12 @@ select {
   .big-boxes {
     width: 100%;
   }
+
+  .team-header {
+    justify-content: center;
+  }
+
+  .team-grid {
+  grid-template-columns: 1fr;
+}
 }
