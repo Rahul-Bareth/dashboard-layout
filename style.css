@@ -516,11 +516,10 @@ select {
 .right-panel {
   width: 310px;
   flex-shrink: 0;
-  height: calc(100vh - 120px);
+  height: auto;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  height: 420px; /* or calc(100vh - 150px) */
-  overflow-y: auto;
 }
 
 
@@ -578,6 +577,7 @@ select {
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  height: 100%;
 }
 
 .box {
