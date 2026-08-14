@@ -10,6 +10,7 @@
   --gray: #f2f3f2;
   --lime: #c7cbac;
   --text: #2b2b2b;
+  --dark-blue: #0e0e35;
 }
 
 /* Scrollbar Width */
@@ -285,6 +286,7 @@ i {
 .grid-card {
   width: 100%;
   max-width: none;
+  min-width: 0;
   background: var(--gray);
   border-radius: 20px;
   padding: 6px;
@@ -669,11 +671,88 @@ select {
 }
 
 
+.footer {
+  margin-left: 85px;
+  margin-top: 20px;
+  padding: 25px;
+  background: var(--dark-blue);
+  border-radius: 20px;
+  width: calc(100% - 85px); 
+  display: grid;
+  grid-template-columns: minmax(250px, 2fr) 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer-brand h3 {
+  color: var(--white);
+}
  
+.footer-brand p {
+  margin-top: 10px;
+  color: #b3aeae;
+  line-height: 1.5;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav h4,
+.footer-status h4,
+.footer-status p {
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: rgb(144, 129, 129);
+  transition: .3s;
+
+}
+
+.footer-nav a:hover {
+  color: teal;
+  transform: translateX(3px);
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.status-item  {
+  color: white;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  grid-column: 1 / -1; 
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 15px;
+  color: #666;
+  width: 100%;
+}
+
+
+
+
 /* TABLET-SCREEN-SIZE */
 
 
-  @media (max-width: 1024px) {
+  @media (min-width: 669px) and (max-width: 1024px) {
 
   .main-container {
     width: calc(100% - 85px);
@@ -734,13 +813,7 @@ select {
     font-size: 1.6rem;
   }
 
-
 }
-
-
-
-
-  
 
 
 /* MOBILE-DISPLAY */
@@ -786,17 +859,15 @@ select {
     cursor: pointer;
   } 
 
- 
-
 
 
   .main-container {
     height: auto;
     min-height: 100vh;
     margin-top: 30px;
-    margin-left: 0;
-    width: 100%;
     justify-content: center;
+    margin-left: 0 !important;
+    width: 100% !important;
   }
 
   header {
@@ -850,6 +921,11 @@ select {
     overflow-x: auto;
     width: 100%;
   }
+
+  .stats-left {
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
   .stats-title {
     flex-direction: column;
@@ -911,4 +987,19 @@ select {
   .team-grid {
   grid-template-columns: 1fr;
 }
+
+
+.footer {
+    margin-left: 0;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand h3 {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    text-align: center;
+  }
 }
