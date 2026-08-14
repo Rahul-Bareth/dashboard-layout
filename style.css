@@ -71,6 +71,10 @@ h1 {
   gap: 6px;
 }
 
+#create-btn-mobile{
+display:none;
+}
+
 #setting-icon {
   font-size: 18px;
   background: var(--gray);
@@ -149,31 +153,42 @@ i {
 }
 
 
+.menu {
+  display: none;
+}
+
 .mobile-menu {
   position: fixed;
-  top: 20px;
-  left: -103%;
-  width: 98%;
-  height: 35%;
-  min-height: 35vh;
+  top: 90px;
+  margin-left:6px;
+  left: 2%;
+  right: 2%;
+  width: 96%;
+  height: auto;
+  /* min-height: 35vh; */
   border-radius: 40px;
   background: var(--dark);
   color: var(--white);
   padding: 20px;
   transition: 0.3s ease;
   z-index: 999;
+  display: none;
 }
 
 #menu-toggle:checked ~ .mobile-menu {
   left: 0;
+  display: block;
 }
+
 
 .close-btn {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  padding: 10px;
+  padding-bottom: 0px;
 }
 
 .mobile-profile {
@@ -521,8 +536,8 @@ select {
 .right-panel {
   width: 310px;
   flex-shrink: 0;
-  height: auto;
-  max-height: 100vh;
+  /* height: 90%; */
+  max-height: 109vh;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -737,6 +752,14 @@ select {
     padding: 10px;
   }
 
+  #create-btn-pc{
+    display:none;
+  }
+  #create-btn-mobile{
+    display:block;
+    
+  }
+
   .sidebar {
     position: static;
     width: 100%;
@@ -763,9 +786,7 @@ select {
     cursor: pointer;
   } 
 
-  .mobile-menu {
-    display: block;
-  }
+ 
 
 
 
@@ -786,12 +807,13 @@ select {
   h1 {
     max-width: 50%;
     text-align: start;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .header-right {
     width: 50%;
     gap: 10px;
+
   }
 
   .create-btn {
