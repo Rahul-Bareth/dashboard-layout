@@ -46,7 +46,6 @@ body {
   background: var(--lime);
   border-radius: 25px;
   padding: 7px;
-  /* height: 100vh; */
   min-height: auto;
   margin: 0 auto;
   min-width: 100%;
