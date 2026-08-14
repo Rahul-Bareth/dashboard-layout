@@ -165,7 +165,6 @@ i {
   right: 2%;
   width: 96%;
   height: auto;
-  /* min-height: 35vh; */
   border-radius: 40px;
   background: var(--dark);
   color: var(--white);
@@ -537,7 +536,6 @@ select {
 .right-panel {
   width: 310px;
   flex-shrink: 0;
-  /* height: 90%; */
   max-height: 109vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -744,7 +742,6 @@ select {
   color: #666;
   width: 100%;
 }
-
 
 
 
